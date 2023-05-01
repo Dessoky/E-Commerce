@@ -1,2 +1,2 @@
 # E-Commerce
-E-Commerce shopping cart sys
+E-Commerce API
