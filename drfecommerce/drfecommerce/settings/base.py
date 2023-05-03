@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_DIR        = Path(__file__).resolve().parent.parent
-SECRET_KEY      = os.environ.get("SECRET_KEY")
-DEBUG           = True
+BASE_DIR = Path(__file__).resolve().parent.parent
+SECRET_KEY = os.environ.get("SECRET_KEY")
+DEBUG = True
 
 
-INSTALLED_APPS  = [
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -20,7 +20,8 @@ INSTALLED_APPS  = [
 
     # External Packages
     'rest_framework',
-    #Internal Apps
+    # Internal Apps
+    'drfecommerce.product',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,8 @@ WSGI_APPLICATION = 'drfecommerce.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarity\
+            Validator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
